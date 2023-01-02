@@ -1,18 +1,17 @@
 from django.db import models
-from django.contrib.auth.models import (
-    BaseUserManager, AbstractBaseUser
-)
+from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
+
 
 class UserManager(BaseUserManager):
     def create_user(self, username, email, password=None):
         if not username:
-            raise ValueError('User must have an username')
-        
+            raise ValueError("User must have an username")
+
         if not email:
-            raise ValueError('User must have an email address')
+            raise ValueError("User must have an email address")
 
         user = self.model(
-            username = username,
+            username=username,
             email=self.normalize_email(email),
         )
 
@@ -34,7 +33,7 @@ class UserManager(BaseUserManager):
 class User(AbstractBaseUser):
     username = models.CharField(max_length=50, unique=True)
     email = models.EmailField(
-        verbose_name='email address',
+        verbose_name="email address",
         max_length=255,
         unique=True,
     )
@@ -43,8 +42,8 @@ class User(AbstractBaseUser):
 
     objects = UserManager()
 
-    USERNAME_FIELD = 'email' # username_field를 email로 변경
-    REQUIRED_FIELDS = ['username']
+    USERNAME_FIELD = "email"  # username_field를 email로 변경
+    REQUIRED_FIELDS = ["username"]
 
     def __str__(self):
         return self.username
