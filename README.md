@@ -1,5 +1,6 @@
-# Custom_TO_CLothes_DLC
-## [스파르타코딩클럽 내일배움캠프 AI 3기] A4팀 딥러닝 프로젝트
+# 👔 Custom_TO_CLothes_DLC
+<br>
+
 ![image](https://user-images.githubusercontent.com/113073174/204189210-e56ca6e8-f649-41a5-83a9-0dc14ba562d3.png)
 
 ## 프로젝트 소개
@@ -60,11 +61,13 @@
     
 ## 와이어프레임
 https://www.figma.com/file/2wXsZhQlOURcWATyJzz2he/Untitled?node-id=0%3A1&t=1Sm22iCgAOGjt3Sy-0
-![Figma](https://user-images.githubusercontent.com/112370211/204183124-1c8f9175-e3b6-49a4-bb6d-fed04774f3df.png)
+![clc피그마](https://user-images.githubusercontent.com/113073174/210203800-a61d5423-ebac-4aee-aef4-0dbadad49f8a.png)
+
 
 
 ## DB 설계
-![DB](https://user-images.githubusercontent.com/112370211/204172591-0b4f8b0a-481b-49ae-abb5-b72deec6caf2.jpg)
+![CTC](https://user-images.githubusercontent.com/113073174/210205145-a160275e-f7b1-4ffa-9060-83a6e7c48e01.jpg)
+
 
 ## API 설계
 | App | 기능 | URL | Method | Request | Response |
