@@ -79,23 +79,7 @@ https://www.figma.com/file/2wXsZhQlOURcWATyJzz2he/Untitled?node-id=0%3A1&t=1Sm22
 
 
 ## API 설계
-| App | 기능 | URL | Method | Request | Response |
-| --- | --- | --- | --- | --- | --- |
-| User |  |  |  |  |  |
-|  | 회원가입 | /user/signup/ | POST | {“email”,“username”,“password”,”password2”} | status:200<br>"result": "ok" |
-|  | 로그인 | /user/api/token/ | POST | {“email”, “password”} |  |
-|  | 로그아웃 | /user/logout/ |  |  |  |
-|  | 프로필 | /user/<int:user_id>/ | GET |  | {"id", "article_image"} |
-|  | 메인페이지 | / | GET |  | {"id", "article_image", "likes_count"} |
-| Article |  |  |  |  |  |
-|  | Base 정보 | /article/| GET |  | {“draft”, "style"} |
-|  | 커스텀 제작 | /article/ | POST | {"draft_id", "style_image", "style_id"} | {“article”} |
-|  | 커스텀 제적 수정 | /article/ | PUT | {"article_id", "draft_id", "style_image", "style_id"} | {“article”} |
-|  | 게시글 좋아요 | /<int:article:id>/like/| POST | {"article_id"} | {"좋아요 등록(취소) 완료"} |
-| Order |  |  |  |  |  |
-|  | 장바구니 조회 | /order/ | GET |  | {"id", "article_user", "mount", "size", "price"} |
-|  | 주문하기 | /order/<int:article_id>/ | POST | {"size", "mount", "status"} | {"order"} |
-|  | 주문목록 | /order/ | GET |  | {"id", "article_user", "mount", "size", "price"} |  |
+[API ](https://documenter.getpostman.com/view/23810621/2s8Z72VXUr)
 
 ## 딥러닝 모델
 [style-transfer-pytorch](https://github.com/crowsonkb/style-transfer-pytorch)
